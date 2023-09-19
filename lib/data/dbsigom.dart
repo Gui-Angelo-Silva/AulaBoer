@@ -40,7 +40,7 @@ class DbSigom {
 
   Future<Map<dynamic, dynamic>?> getCarros(int rollno) async {
     List<Map> maps =
-        await db.query('books', where: 'roll_no = ?', whereArgs: [rollno]);
+        await db.query('carro', where: 'roll_no = ?', whereArgs: [rollno]);
 
     //getting student data with roll no.
 
