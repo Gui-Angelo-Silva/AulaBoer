@@ -61,10 +61,10 @@ class _ListVeiculo extends State<ListVeiculo> {
                           children: [
                             IconButton(
                                 onPressed: () {
-                                  // Navigator.push(context, MaterialPageRoute(
-                                  //     builder: (BuildContext context) {
-                                  //   return EditBook(rollno: stuone["roll_no"]);
-                                  // })); //navigate to edit page, pass student roll no to edit
+                                  Navigator.push(context, MaterialPageRoute(
+                                      builder: (BuildContext context) {
+                                    return EditVeiculo(rollno: stuone["roll_no"]);
+                                  })); //navigate to edit page, pass student roll no to edit
                                 },
                                 icon: Icon(Icons.edit)),
                             IconButton(
